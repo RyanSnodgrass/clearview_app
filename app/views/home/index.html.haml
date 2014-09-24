@@ -1,0 +1,227 @@
+.header
+  #site_title
+    %a{:href => "index.html"}
+      = image_tag "logo.png"
+
+      / %img{:src => "logo.png"}/
+  / Main Menu
+  %ol#menu
+    %li.active_menu_item
+      %a{:href => "index.html"} Home
+      / sub menu
+      %ol
+        %li
+          %a{:href => "nivo.html"} Nivo Slider
+        %li
+          %a{:href => "ei_slider.html"} EI Slider
+        %li
+          %a{:href => "fullscreen_gallery.html"} Fullscreen Slider
+        %li
+          %a{:href => "image_frontpage.html"} Static Image
+    / END sub menu
+    %li
+      %a{:href => "#"} Pages
+      / sub menu
+      %ol
+        %li
+          %a{:href => "magazine.html"} Magazine
+        %li
+          %a{:href => "blog.html"} Blog
+        %li
+          %a{:href => "full-width.html"} Full Width Page
+        %li
+          %a{:href => "columns.html"} Columns
+    / END sub menu
+    %li
+      %a{:href => "elements.html"} Elements
+    %li
+      %a{:href => "#"} Galleries
+      / sub menu
+      %ol
+        %li
+          %a{:href => "gallery-simple.html"} Simple
+        %li
+          %a{:href => "portfolio.html"} Filterable
+        %li
+          %a{:href => "gallery_fader.html"} Fade Scroll
+        %li
+          %a{:href => "video.html"} Video
+        %li.last
+          %a{:href => "photogrid.html"} PhotoGrid
+    / END sub menu
+    %li
+      %a{:href => "contact.html"} Contact
+/ END header
+#container
+  / tab panes
+  #prod_wrapper
+    #panes
+      %div
+        %img{:alt => "demo", :src => "img/demo/1.jpg"}/
+        %h2 Welcome to Bangalore
+        %p
+          Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.
+        %p{:style => "text-align:right; margin-right: 16px"}
+          %a.button{:href => "#"} More Info
+          %a.button{:href => "#"} Buy Now
+      %div
+        = image_tag "demo/2.jpg", alt: "demo"
+        %h2 Meet Our Team
+        %p
+          Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.
+        %p{:style => "text-align:right; margin-right: 16px"}
+          %a.button{:href => "#"} More Info
+          %a.button{:href => "#"} Buy Now
+      %div
+        %img{:alt => "demo", :src => "img/demo/3.jpg"}/
+        %h2 Mauris elementum
+        %p
+          Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.
+        %p{:style => "text-align:right; margin-right: 16px"}
+          %a.button{:href => "#"} More Info
+          %a.button{:href => "#"} Buy Now
+      %div
+        %img{:alt => "demo", :src => "img/demo/4.jpg"}/
+        %h2 Nam tempor nibh
+        %p
+          Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.
+        %p{:style => "text-align:right; margin-right: 16px"}
+          %a.button{:href => "#"} More Info
+          %a.button{:href => "#"} Buy Now
+      %div
+        %img{:alt => "demo", :src => "img/demo/5.jpg"}/
+        %h2 Supercar
+        %p
+          Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. Ut vitae nunc a libero volutpat gravida. Nullam egestas mi sit amet dui scelerisque eu laoreet nisi ultrices. Ut vitae nunc a libero volutpat gravida. Nam tempor nibh a purus aliquam.
+        %p{:style => "text-align:right; margin-right: 16px"}
+          %a.button{:href => "#"} More Info
+          %a.button{:href => "#"} Buy Now
+    / END tab panes
+    %br{:clear => "all"}/
+    / navigator
+    #prod_nav
+      %ul
+        %li
+          %a{:href => "#1"}
+            %img{:alt => "demo", :src => "img/demo/1.jpg", :width => "160"}/
+            %strong Class aptent
+            $ 199
+        %li
+          %a{:href => "#2"}
+            %img{:alt => "demo", :src => "img/demo/2.jpg", :width => "160"}/
+            %strong Sed dui risus
+            $ 125
+        %li
+          %a{:href => "#3"}
+            %img{:alt => "demo", :src => "img/demo/3.jpg", :width => "160"}/
+            %strong Pellentesque quis
+            $ 480
+        %li
+          %a{:href => "#4"}
+            %img{:alt => "demo", :src => "img/demo/4.jpg", :width => "160"}/
+            %strong Mauris elementum
+            $ 1099
+        %li
+          %a{:href => "#5"}
+            %img{:alt => "demo", :src => "img/demo/5.jpg", :width => "160"}/
+            %strong Cras et malesuada
+            $ 99
+    / END navigator
+  / END prod wrapper
+  %div{:style => "clear:both"}
+  .one-third
+    %h2 Business Solutions
+    %p Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+    %p{:style => "text-align:right; margin-right: 15px"}
+      %a.button_small{:href => "#"} Find out more
+  .one-third
+    %h2 Become a Partner
+    %p Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+    %p{:style => "text-align:right; margin-right: 15px"}
+      %a.button_small{:href => "#"} Contact Us Today
+  .one-third.last
+    %h2 Latest News
+    %p Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+    %p{:style => "text-align:right; margin-right: 15px"}
+      %a.button_small{:href => "#"} Read Article
+  %div{:style => "clear:both"}
+  .box_highlight{:style => "margin-top:40px"}
+    %h2{:style => "text-align:center"} Some kind of sales pitch goes here!
+  .one-half
+    .heading_bg
+      %h2 About Us
+    %blockquote
+      Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+    %p{:style => "text-align:right; margin-right: 16px; margin-bottom: 15px"}
+      %a.button{:href => "#", :style => "font-size: 18px"} Find out more
+    .heading_bg
+      %h2 Video
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "262", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/22884674?title=0&byline=0&portrait=0&color=ffffff", :webkitallowfullscreen => "", :width => "465"}
+  .one-half.last
+    .heading_bg
+      %h2 Contact us today!
+    /
+      Edit process_form.php to make the form work with your e-mail address. If you need to create more forms go to www.csstemplateheaven.com/tools/form_builder
+      IMPORTANT! Change action="#" to action="contact_form/process_form.php"
+    %form.TTWForm{:action => "#", :method => "post", :novalidate => ""}
+      #field1-container.field.f_50
+        %label{:for => "field1"} Name
+        %input#field1{:name => "name", :required => "required", :type => "text"}/
+      #field2-container.field.f_50
+        %label{:for => "field2"} Telephone
+        %input#field2{:name => "tel", :required => "required", :type => "text"}/
+      #field5-container.field.f_50
+        %label{:for => "field5"} Email
+        %input#field5{:name => "email", :required => "required", :type => "email"}/
+      #field4-container.field.f_100
+        %label{:for => "field4"} Message
+        %textarea#field4{:cols => "20", :name => "message", :required => "required", :rows => "5"}
+      #form-submit.field.f_100.clearfix.submit
+        %input{:type => "submit", :value => "Submit"}/
+  %div{:style => "clear:both; height: 40px"}
+/ END container
+#footer
+  / First Column
+  .one-fourth
+    %h3 Useful Links
+    %ul.footer_links
+      %li
+        %a{:href => "#"} Lorem Ipsum
+      %li
+        %a{:href => "#"} Ellem Ciet
+      %li
+        %a{:href => "#"} Currivitas
+      %li
+        %a{:href => "#"} Salim Aritu
+  / Second Column
+  .one-fourth
+    %h3 Terms
+    %ul.footer_links
+      %li
+        %a{:href => "#"} Lorem Ipsum
+      %li
+        %a{:href => "#"} Ellem Ciet
+      %li
+        %a{:href => "#"} Currivitas
+      %li
+        %a{:href => "#"} Salim Aritu
+  / Third Column
+  .one-fourth
+    %h3 Information
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet enim id dui tincidunt vestibulum rhoncus a felis.
+    #social_icons
+      Theme by
+      %a{:href => "http://www.csstemplateheaven.com"} CssTemplateHeaven
+      %br/
+      Photos ©
+      %a{:href => "http://dieterschneider.net", :title => "Dieter Schneider Photography"} Dieter Schneider
+  / Fourth Column
+  .one-fourth.last
+    %h3 Socialize
+    = image_tag "icon_fb.png", alt: "Facebook"
+
+    %img{:alt => "Facebook", :src => "img/icon_fb.png"}/
+    %img{:alt => "Facebook", :src => "img/icon_twitter.png"}/
+    %img{:alt => "Facebook", :src => "img/icon_in.png"}/
+  %div{:style => "clear:both"}
+/ END footer
